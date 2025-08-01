@@ -1,10 +1,14 @@
-from flask import Flask, send_from_directory
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def serve_index():
-    return send_from_directory('.', 'index.html')
+def login():
+    return render_template('index.html')
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8000)
