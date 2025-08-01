@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOMduz</title>
+    <title>KOMduzz - Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f5f5f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .login-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { width: 100%; padding: 10px; background-color: #5e5e5e; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #444; }
+    </style>
 </head>
 <body>
-    <h1>KOMduz Online!</h1>
-    <p>Primeiro teste de deploy no Azure</p>
+    <div class="login-container">
+        <h2>Login KOMduzz</h2>
+        <form action="dashboard.html" method="get">
+            <input type="text" name="usuario" placeholder="Usuário" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
 </body>
 </html>
