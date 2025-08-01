@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOMduzz - Dashboard</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #f5f5f5;}
-        a { display: inline-block; padding: 12px 24px; background-color: #5e5e5e; color: white; text-decoration: none; border-radius: 5px; }
-        a:hover { background-color: #444; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #5e5e5e; /* Cinza do KOMduzz */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .card {
+            background-color: white;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            background-color: #5e5e5e;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao KOMduzz!</h1>
-    <p>Escolha uma opção abaixo:</p>
-    <a href="agenda.html">Ver Agenda</a>
+    <header>
+        <h2>Bem-vinda ao KOMduz 🎉</h2>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h1>Olá, Anna!</h1>
+            <p>Seu login foi realizado com sucesso.</p>
+            <p>Aqui será o painel inicial da Agenda do KOMduz.</p>
+            <a href="index.html" class="btn">Sair</a>
+        </div>
+    </div>
 </body>
 </html>
